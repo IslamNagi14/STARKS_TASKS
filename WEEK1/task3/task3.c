@@ -8,7 +8,7 @@ int main()
     scanf("%c",& elemnt);
     printf("your character is %c\n",elemnt);
     printf("the ascii code of your character is %d\n",elemnt);
-	elemnt_before = elemnt-1;
+    elemnt_before = elemnt-1;
     printf("the character before your character is %c\n",elemnt_before);
     elemnt_after = elemnt+1;
     printf("the character after your character is %c\n",elemnt_after);
