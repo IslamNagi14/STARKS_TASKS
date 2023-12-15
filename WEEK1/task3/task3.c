@@ -3,7 +3,7 @@
 
 int main()
 {
-    char elemnt,elemnt_after,elemnt_before;
+    char elemnt;
     printf("enter your character ");
 
     scanf("%c",& elemnt);
