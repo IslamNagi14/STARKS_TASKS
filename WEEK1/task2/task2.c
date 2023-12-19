@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 int main()
-{float num1,num2,swap;
+{
+    float num1,num2,swap;
     printf("Enter the first float number ");
     scanf("%f",&num1);
     printf("Enter the second float number ");
