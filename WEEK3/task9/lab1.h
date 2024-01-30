@@ -1,0 +1,1 @@
+void calc_avg(float num1,float num2);
