@@ -12,10 +12,20 @@ void main()
 	scanf("%d",& B);
 	for ( i = 1; i <= N;i++)
 	{
-		int rem = (i % 10) + (i / 10);
+		int rem =0;
+		int j; j=i;
+		for(;;)
+		{
+		 rem = rem + (j % 10);
+		
+		 j/=10;
+		 if(j==0)
+			 break;
+		}
 		
 		if ((rem >= A) && (rem <=B))
 		{
+			 printf("%d\n",i);
 			sum += i;
 		}
 	}
