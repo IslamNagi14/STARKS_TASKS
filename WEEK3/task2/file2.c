@@ -1,4 +1,5 @@
-unsigned long long fibonacci(unsigned int n)
+#include<stdio.h>
+unsigned long long fibonacci(unsigned int *n)
 {
 	int y=1,x=0,count=0;
 	
@@ -7,9 +8,9 @@ unsigned long long fibonacci(unsigned int n)
 		if(i == (x+y))
 		{
 		    count++;
-            if(n==count)
+            if(*n==count)
 			{
-			return x;
+			*n =x;
 			}
 			x = y;
 			y = i;
@@ -17,5 +18,7 @@ unsigned long long fibonacci(unsigned int n)
 		}
 		
 	}
+	
+	
 	return y;
 }
