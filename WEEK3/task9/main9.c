@@ -6,7 +6,7 @@ void main(void)
 	char a;static int x =0;
 	for(;;)
 	{
-	printf("do you want to calculate the average?\nenter (Y,y) for Yes or (N,n) for No : ");
+	printf("do you want to calculate the average?\nenter (Y,y) for Yes : ");
 	scanf("%s",&a);
 	if( a == 'Y' || a == 'y')
 	{		
