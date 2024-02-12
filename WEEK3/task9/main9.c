@@ -3,17 +3,24 @@
 #include"lab1.h"
 void main(void)
 {
-	int  i;
-	for(i =0;i<5;i++)
+	char a;static int x =0;
+	for(;;)
 	{
-		printf("the call number %d\n",i+1);
-	float num1, num2;
-	printf("enter the 1st number : ");
-    scanf("%f",&num1);	
-	printf("enter the 2nd number : ");
-    scanf("%f",&num2);	
-	calc_avg(num1,num2);
+	printf("do you want to calculate the average?\nenter (Y,y) for Yes : ");
+	scanf("%s",&a);
+	if( a == 'Y' || a == 'y')
+	{		
+          x++;
+          printf("the call number %d\n",x);
+	      float num1, num2;
+	      printf("enter the 1st number : ");
+          scanf("%f",&num1);	
+	      printf("enter the 2nd number : ");
+          scanf("%f",&num2);	
+	      calc_avg(num1,num2);
 	}
-	printf("number of occurrences of those calls is %d",i);
+	else{break;}
+	}
+	printf("number of occurrences of those calls is %d",x);
 }
  
