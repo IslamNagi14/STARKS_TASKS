@@ -1,15 +1,17 @@
 #include<stdio.h>
 #include<string.h>
 int F_occu(char*,char*);
-
+int (*ptr)(char*,char*);
 void main (void)
 {
+	ptr = F_occu;
 	char str1[200] , str2[200];
 	printf("enter source string : ");
 	gets(str1);
 	printf("enter search string : ");
 	gets(str2);
-	int ind_num = F_occu(str1 , str2);
+	
+	int ind_num = ptr(str1,str2);
 	if(ind_num >= 0)
 				printf("Frist occurance of %s at index : %d",str2,ind_num);
 		else
@@ -45,6 +47,10 @@ int F_occu(char *p_str1,char *p_str2)
 		return i ;
 		else
 		return -1;
+
+
+	
+}
 
 
 	
